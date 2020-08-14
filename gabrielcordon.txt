@@ -2,16 +2,17 @@
 $("#barCodeForm").on('submit', function (event) {
       event.preventDefault();
         var codeIn = $("#ordet_productCode").val();
-          $.get('PosProductName.php', {
+          $.get('PosProductNumber.php', {
             "prd_id": 0,
             "prd_code": codeIn
           }, function (dataGroup) {
             if (dataGroup) {
-              $('#groupName').html(dataGroup);
+              $('#groupNumber').html(dataGroup);
           } else {
               $('#groupName').html('Sin Dato');
 	      $('#groupName').html('Con datos');
+              $('#groupNumber').html('Sin Dato');
           }
       });
     });
-//sa
+//
