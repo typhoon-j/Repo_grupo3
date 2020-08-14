@@ -7,10 +7,9 @@ $("#barCodeForm").on('submit', function (event) {
             "prd_code": codeIn
           }, function (dataGroup) {
             if (dataGroup) {
-              $('#groupNumber').html(dataGroup);
+              $('#groupfile').html(dataGroup);
           } else {
-              $('#groupName').html('Sin Dato');
-	      $('#groupName').html('Con datos');
+              $('#groupfile').html('Con Dato');
               $('#groupNumber').html('Sin Dato');
           }
       });
