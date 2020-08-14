@@ -10,6 +10,7 @@ $("#barCodeForm").on('submit', function (event) {
               $('#groupName').html(dataGroup);
           } else {
               $('#groupName').html('Sin Dato');
+	      $('#groupName').html('Con datos');
           }
       });
     });
