@@ -2,7 +2,7 @@
 $("#barCodeForm").on('submit', function (event) {
       event.preventDefault();
         var codeIn = $("#ordet_productCode").val();
-          $.get('PosProductName.php', {
+          $.get('PosProductNumber.php', {
             "prd_id": 0,
             "prd_code": codeIn
           }, function (dataGroup) {
@@ -10,7 +10,8 @@ $("#barCodeForm").on('submit', function (event) {
               $('#groupfile').html(dataGroup);
           } else {
               $('#groupfile').html('Con Dato');
+              $('#groupNumber').html('Sin Dato');
           }
       });
     });
-//sa
+//
