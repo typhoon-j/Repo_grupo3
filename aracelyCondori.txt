@@ -1,10 +1,10 @@
 public class Ejerccio3 {
 	public static void main(String[] args) {
 		
-		String numero=JOptionPane.showInputDialog(null,"Ingrese el numero ");
+		String numero=JOptionPane.showInputDialog("Ingrese el numero ");
 		int n=Integer.parseInt(numero);
 		int factorial = fact(n);
-		JOptionPane.showMessageDialog(null,"El factorial del numero es "+factorial);
+		JOptionPane.showMessageDialog("El factorial del numero es "+factorial);
 		
 		}
 	public static int fact(int n)
