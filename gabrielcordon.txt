@@ -1,0 +1,16 @@
+/ formulario de busqueda por codigo, el de referencia es igual    
+$("#barCodeForm").on('submit', function (event) {
+      event.preventDefault();
+        var codeIn = $("#ordet_productCode").val();
+          $.get('PosProductName.php', {
+            "prd_id": 0,
+            "prd_code": codeIn
+          }, function (dataGroup) {
+            if (dataGroup) {
+              $('#groupName').html(dataGroup);
+          } else {
+              $('#groupName').html('Sin Dato');
+          }
+      });
+    });
+//sa
